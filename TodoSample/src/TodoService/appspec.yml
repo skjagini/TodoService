@@ -1,0 +1,13 @@
+﻿
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /Musiq
+permissions:
+   - object: /Musiq/startApp.sh
+     mode: 777
+hooks:
+  BeforeInstall:
+    - location: startApp.sh
+      timeout: 10
