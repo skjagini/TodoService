@@ -8,7 +8,7 @@ import 'rxjs/add/operator/catch';
 export class TodoService {
     todos: TodoItem[] = [];
     activeTodo: TodoItem = new TodoItem();
-    baseUrl = "http://localhost:5000/";
+    baseUrl = "/";
 
     constructor(private http: HttpClient) {
 
